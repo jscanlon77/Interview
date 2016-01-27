@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview Stuff", "ConsoleApplication1\Interview Stuff.csproj", "{BE180950-0B1E-411F-87C7-D218F4FAD9F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE180950-0B1E-411F-87C7-D218F4FAD9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE180950-0B1E-411F-87C7-D218F4FAD9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE180950-0B1E-411F-87C7-D218F4FAD9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE180950-0B1E-411F-87C7-D218F4FAD9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
