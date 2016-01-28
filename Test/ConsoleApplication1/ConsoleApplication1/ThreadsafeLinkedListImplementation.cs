@@ -121,10 +121,10 @@
         }
 
         // Create the node class.
-        public class Node<T>
+        public class Node<TU>
         {
-            public Node<T> Next;
-            public T NodeContent;
+            public Node<TU> Next;
+            public TU NodeContent;
         }
     }
 }

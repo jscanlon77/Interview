@@ -24,8 +24,6 @@ namespace ConsoleApplication1
 
     class Program
     {
-        private static bool workDone;
-
         public static void Foo(int x = 0, int y = 1, string s = "abc")
         {
             Console.WriteLine(x + y + s);
