@@ -59,6 +59,15 @@ namespace ConsoleApplication1
                 Console.WriteLine(number);
             }
             Console.WriteLine();
+
+            BinaryTreeNode<string> node = new BinaryTreeNode<string>("hello");
+            node.Left = new BinaryTreeNode<string>("Left data");
+            node.Right = new BinaryTreeNode<string>("Right data");
+            BinaryTree<string> tree = new BinaryTree<string> {Root = node};
+            var value = tree.Root.Left.Value;
+
+            var doesContain = tree.Contains("Left data");
+            var doesContainRight = tree.Contains("Right data");
             Console.ReadLine();
         }
 
