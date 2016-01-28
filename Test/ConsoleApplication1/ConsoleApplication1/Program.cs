@@ -49,14 +49,36 @@ namespace ConsoleApplication1
             // D d2 = b2 - this is not ok because b does not derive from B
             D d4 = (D) d1; // this is ok
             D d5 = (D) b2; // this is also ok because d derives from b and hence cast is ok
-            D db = (D) b1; // this will fail bedause B cannot be cast as D
+            //D db = (D) b1; // this will fail bedause B cannot be cast as D
             B b5 = (B) d1; // This will fail with a a runtime exception as object cannot be cast.
             B b6 = (D) b2; // this is ok
 
-
+            var listOfOddNumbers = GetOddNumbers(11);
+            foreach (var number in listOfOddNumbers)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine();
+            Console.ReadLine();
         }
 
-        
+        public static IEnumerable<int> GetOddNumbers(int maxNumber)
+        {
+            List<int> oddSet = new List<int>();
+            int num = 0;
+            while (true)
+            {
+                num++;
+                if (num%2 == 1)
+                {
+                    yield return num;
+                }
+                if (num >= maxNumber)
+                {
+                    yield break;
+                }
+            }
+        } 
          
     }
 }
