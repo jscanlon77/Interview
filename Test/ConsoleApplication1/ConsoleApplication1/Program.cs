@@ -66,6 +66,21 @@ namespace ConsoleApplication1
 
             var doesContain = tree.Contains("Left data");
             var doesContainRight = tree.Contains("Right data");
+
+            Puzzles puzzles = new Puzzles();
+            puzzles.DoFizzBuzz();
+
+            List<int> listOfInts = new List<int>() { 1, 8, 2, 7, 4, 6, 5, 9, 2, 5, 7, 4, 6 };
+            var position = puzzles.GetPositionOfInt(listOfInts, 17);
+
+            List<int> listOfNumbers = new List<int>() { 1, 8, 2, 7, 4, 6, 5, 9, 2, 5, 7, 4, 10,12,15,18,19, 20, 25,23, 31 };
+            var result = puzzles.FindPrimeNumbersInArray(listOfNumbers);
+
+            List<int> arrayOfNumbers = new List<int>() { 1, 8, 2, 7, 4, 6, 5, 9, 2, 5, 7, 4, 10, 12, 15, 18, 19, 20, 25, 23, 31 };
+            var reverseResult = puzzles.ReverseArray(arrayOfNumbers);
+            var manualReverse = puzzles.ReversArrayManually(arrayOfNumbers);
+
+
             Console.ReadLine();
         }
 
